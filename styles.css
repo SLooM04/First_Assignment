@@ -1,262 +1,242 @@
+/* Reset default margins and paddings, and set box-sizing to border-box */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* General body styles */
 body {
-  font-family: "Comic Sans MS", "Arial", sans-serif;
-  background-color: #fff7dd;
-  color: #3e2723;
-  padding-bottom: 60px;
+  font-family: "Comic Sans MS", "Arial", sans-serif; /* Font family */
+  background-color: #fff7dd; 
+  color: #3e2723; 
+  padding-bottom: 60px; 
 }
 
+/* Main section styles */
 main {
-  padding: 30px;
+  padding: 30px; 
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-header {
-  background-color: #5bbfee;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-ul {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-
-p,
-ul {
-  font-size: 17.6px;
-  line-height: 1.5;
-}
-
-ul li {}
-
-nav ul {
-  justify-content: space-around;
-  padding: 20px 0;
-  margin: auto;
-}
-
-nav ul a {
-  margin: 15px;
-  color: #000000;
-  font-size: 19.2px;
-  padding: 8px 20px;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul a:hover {
-  background-color: #4f6a77;
-  color: #ff8a65;
-  transform: scale(1.1);
-}
-
-#schedule p {
-  padding-left: 3%;
+/* Welcome Section */
+#welcome {
+  text-align: center; 
 }
 
 #welcome h2 {
-  text-align: center;
-  font-size: 40px;
+  font-size: 40px; 
 }
 
 #welcome p {
-  text-align: center;
+  padding-left: 40px; 
 }
 
+/* Header styles */
+header {
+  background-color: #5bbfee; 
+  color: #fff; 
+  padding: 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Navigation list styles */
+ul {
+  display: flex; /* Flex layout for the menu */
+  list-style: none; /* Remove default list style */
+  padding-left: 0; /* Remove left padding */
+}
+
+nav ul {
+  justify-content: space-around; 
+  padding: 20px 0; /* Padding above and below the menu */
+  margin: auto; 
+}
+
+/* Navigation links styles */
+nav ul a {
+  margin: 15px; 
+  color: #000000; 
+  font-size: 19.2px; 
+  padding: 8px 20px; 
+  border-radius: 30px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Hover effects for navigation links */
+nav ul a:hover {
+  background-color: #4f6a77; 
+  color: #ff8a65; 
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Schedule Section */
+#schedule {
+  margin-bottom: 40px; 
+}
+
+#schedule p {
+  padding-left: 3%; 
+}
+
+/* General heading styles */
 h2 {
-  color: #ff8a65;
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #000000;
-  padding-left: 40px;
+  color: #ff8a65; 
+  font-size: 2em; 
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px #000000; 
+  padding-left: 40px; 
 }
 
-#teacher h2 {
-  text-align: center;
-}
-
-#welcome p {
-  padding-left: 40px;
-}
-
+/* Gallery Section */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .gallery img {
-  width: 350px;
-  height: 350px;
-  margin: 60px;
+  width: 350px; 
+  height: 350px; 
+  margin: 60px; 
   border-radius: 10px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Shadow effect for images */
 }
 
-.teacher-details {
+/* Announcements Section */
+#announcements {
+  padding: auto; 
+  background-color: #84e1f1;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin: 0 auto 20px auto; 
+  width: 80%; 
+}
+
+#announcements p {
+  text-align: left; 
+}
+
+/* Parent Resources Section */
+#parent-resources {
+  padding: 20px; 
+  background-color: #84e1f1; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
   text-align: center;
+  margin: 20px auto 0 auto; 
+}
+
+#parent-resources h2 {
+  color: #ff8a65; 
+  font-size: 2em;
+  margin-bottom: 15px; 
+}
+
+/* Resources container flex layout */
+.resources-container {
+  display: flex; 
+  justify-content: space-around; 
+}
+
+.video-content,
+.read-content {
+  width: 45%; 
+}
+
+/* Teacher Section */
+#teacher {
+  text-align: center; 
+}
+
+#teacher h2 {
+  text-align: center; 
 }
 
 .teacher-details img {
-  width: 200px;
+  width: 200px; 
   height: auto;
-  border-radius: 50%;
-  border: 4px solid #84e1f1;
+  border-radius: 50%; /* Circular image */
+  border: 4px solid #84e1f1; /* Border around image */
 }
 
-table {
+#teacher p {
+  margin-left: 50px; 
+  margin-right: 50px; 
+}
+
+/* Footer styles */
+footer {
+  background-color: #84e1f1; 
+  text-align: center; 
+  padding: 10px; 
+  position: relative; 
+  bottom: 0; 
   width: 100%;
-  border-collapse: collapse;
-  background-color: #84e1f1;
-  margin: 4%;
+}
+
+/* Table Styles */
+table {
+  width: 100%; 
+  border-collapse: collapse; /* Collapse borders */
+  background-color: #84e1f1; 
+  margin: 4%; 
 }
 
 table,
 th,
 td {
-  border: 2px solid #000000;
+  border: 2px solid #000000; /* Solid border for table, header, and cells */
 }
 
 th,
 td {
-  text-align: center;
-  padding: 5px;
-  font-size: 1.2em;
-  color: #4a4a4a;
+  text-align: center; 
+  padding: 5px; 
+  font-size: 1.2em; 
+  color: #4a4a4a; 
 }
 
 th {
-  background-color: #84e1f1;
-  color: #fff;
+  background-color: #84e1f1; 
+  color: #fff; 
   font-family: "Comic Sans MS", cursive;
 }
 
 td {
-  background-color: #fff;
-  transition: background-color 0.3s ease;
+  background-color: #fff; 
+  transition: background-color 0.3s ease; /* Transition for hover effect */
 }
 
 td:hover {
-  background-color: #84e1f1;
+  background-color: #84e1f1; /* Change background on hover */
 }
 
-
-#announcements {
-  padding: auto;
-  background-color: #84e1f1;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto 20px auto;
-  width: 80%;
-}
-
-#announcements p {
-  text-align: left;
-}
-
-#parent-resources {
-  padding: 20px;
-  background-color: #84e1f1;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 20px auto 0 auto;
-  width: 80%;
-}
-
-
-#teacher p {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
-#parent-resources h2 {
-  color: #ff8a65;
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-
-.resources-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.video-content,
-.read-content {
-  width: 45%;
-}
-
-h3 {
-  color: #ff8a65;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
-a {
-  text-decoration: none;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #ff8a65;
-}
-
-
-footer {
-  background-color: #84e1f1;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
+/* Media query for moblie view */
 @media (max-width: 768px) {
-
+ 
   table,
   thead,
   tbody,
   th,
   td,
   tr {
-    display: block;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block; 
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
+  
   #announcements p {
-    padding: 5%;
+    padding: 5%; 
   }
 
+  
   nav ul {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
   }
 
+  /* Hide table headers on smaller screens */
   th {
     position: absolute;
     top: -9999px;
@@ -264,44 +244,43 @@ footer {
   }
 
   tr {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem 0; 
   }
 
   td {
-    text-align: left;
-    padding-left: 50%;
-    position: relative;
+    text-align: left; 
+    padding-left: 50%; 
+    position: relative; 
   }
 
-
   td::before {
-    position: absolute;
-    left: 10px;
-    width: 40%;
-    padding-right: 10px;
-    white-space: nowrap;
-    content: attr(data-label);
+    position: absolute; 
+    left: 10px; 
+    width: 40%; 
+    padding-right: 10px; 
+    white-space: nowrap; /* Prevent text wrap */
+    content: attr(data-label); /* Use data-label for cell */
     font-weight: bold;
   }
 
   ul li {
-    box-shadow: 3px 3px 5px rgba(38, 28, 177, 0.1);
+    box-shadow: 3px 3px 5px rgba(38, 28, 177, 0.1); /* Shadow effect for list items */
   }
 
   #welcome p {
-    text-align: justify;
+    text-align: justify; 
   }
 
   #schedule p {
-    text-align: justify;
+    text-align: justify; 
   }
 
   #teacher-details p {
-    text-align: justify;
+    text-align: justify; /
   }
 
   #announcements h2 {
-    text-align: center;
-    padding-right: 4%;
+    text-align: center; 
+    padding-right: 4%; 
   }
 }
