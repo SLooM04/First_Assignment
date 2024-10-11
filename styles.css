@@ -6,7 +6,7 @@
 
 body {
   font-family: "Comic Sans MS", "Arial", sans-serif;
-  background-color: #e8f5e9;
+  background-color: #fff7dd;
   color: #3e2723;
   padding-bottom: 60px;
 }
@@ -27,9 +27,10 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 ul {
   display: flex;
-  list-style: none; /* remove bullet points */
+  list-style: none;
   padding-left: 0;
 }
 
@@ -39,9 +40,7 @@ ul {
   line-height: 1.5;
 }
 
-ul li {
-  box-shadow: 3px 3px 5px rgba(177, 28, 28, 0.1);
-}
+ul li {}
 
 nav ul {
   justify-content: space-around;
@@ -53,20 +52,24 @@ nav ul a {
   margin: 15px;
   color: #000000;
   font-size: 19.2px;
-  padding: 8px 20px; /* 8px for vertical padding and 20px for horizontal padding */
+  padding: 8px 20px;
   border-radius: 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul a:hover {
-  background-color: #4a5f69;
+  background-color: #4f6a77;
   color: #ff8a65;
   transform: scale(1.1);
 }
 
+#schedule p {
+  padding-left: 3%;
+}
+
 #welcome h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #welcome p {
@@ -96,9 +99,9 @@ h2 {
 }
 
 .gallery img {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
+  width: 350px;
+  height: 350px;
+  margin: 60px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -130,7 +133,7 @@ td {
 th,
 td {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.2em;
   color: #4a4a4a;
 }
@@ -150,19 +153,18 @@ td:hover {
   background-color: #84e1f1;
 }
 
-#resources p {
+
+#announcements {
+  padding: auto;
   background-color: #84e1f1;
-  text-align: justify;
-  border-radius: 20px;
-  padding: 1%;
-  font-size: 18px;
-  color: #000000;
-  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 20px auto;
+  width: 80%;
 }
 
-#teacher p {
-  margin-left: 50px;
-  margin-right: 50px;
+#announcements p {
+  text-align: left;
 }
 
 #parent-resources {
@@ -171,15 +173,23 @@ td:hover {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   width: 80%;
 }
+
+
+#teacher p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 
 #parent-resources h2 {
   color: #ff8a65;
   font-size: 2em;
   margin-bottom: 15px;
 }
+
 
 .resources-container {
   display: flex;
@@ -216,6 +226,7 @@ a:hover {
   color: #ff8a65;
 }
 
+
 footer {
   background-color: #84e1f1;
   text-align: center;
@@ -224,7 +235,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 @media (max-width: 768px) {
+
   table,
   thead,
   tbody,
@@ -236,7 +249,7 @@ footer {
     align-items: flex-start;
   }
 
-  #resources p {
+  #announcements p {
     padding: 5%;
   }
 
@@ -260,6 +273,7 @@ footer {
     position: relative;
   }
 
+
   td::before {
     position: absolute;
     left: 10px;
@@ -268,5 +282,26 @@ footer {
     white-space: nowrap;
     content: attr(data-label);
     font-weight: bold;
+  }
+
+  ul li {
+    box-shadow: 3px 3px 5px rgba(38, 28, 177, 0.1);
+  }
+
+  #welcome p {
+    text-align: justify;
+  }
+
+  #schedule p {
+    text-align: justify;
+  }
+
+  #teacher-details p {
+    text-align: justify;
+  }
+
+  #announcements h2 {
+    text-align: center;
+    padding-right: 4%;
   }
 }
