@@ -39,6 +39,9 @@ header {
   text-align: center; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
+header .menu nav ul li a {
+  text-decoration: none;
+}
 
 /* Navigation list styles */
 ul {
@@ -105,10 +108,9 @@ h2 {
 
 /* Announcements Section */
 #announcements {
-  padding: auto; 
+  padding: 1%; 
   background-color: #84e1f1;
   border-radius: 10px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
   margin: 0 auto 20px auto; 
   width: 80%; 
 }
@@ -119,12 +121,12 @@ h2 {
 
 /* Parent Resources Section */
 #parent-resources {
-  padding: 20px; 
-  background-color: #84e1f1; 
+  padding: 1%; 
+  background-color: #84e1f1;
   border-radius: 10px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin: 0 auto 20px auto; 
+  width: 80%;  
   text-align: center;
-  margin: 20px auto 0 auto; 
 }
 
 #parent-resources h2 {
@@ -161,8 +163,8 @@ h2 {
 }
 
 #teacher p {
-  margin-left: 50px; 
-  margin-right: 50px; 
+  margin-left: 250px; 
+  margin-right: 250px; 
 }
 
 /* Footer styles */
@@ -282,5 +284,9 @@ td:hover {
   #announcements h2 {
     text-align: center; 
     padding-right: 4%; 
+  }
+  #teacher p {
+    margin-left: 50px; 
+    margin-right: 50px; 
   }
 }
